@@ -1,15 +1,21 @@
 # myPLS
-myPLS toolbox - PLS analysis for medical image processing
- 
+We present myPLS toolbox, a Matlab-based analysis pipeline that uses Partial Least Squares (PLS). 
+
+PLS is a data-driven multivariate statistical technique that aims to extract relationships between two data matrices by maximizing the covariance between the two matrices (McIntosh et al., 2004). 
+
+myPLS deploys Behavior PLS, which aims to optimally relate neuroimaging to behavioral data, by deriving _latent components_ that are weighted linear combinations of the original variables. 
+
+myPLS can be used with different types of neuroimaging data formats : 1D (e.g., region-wise graph metrics), 2D (e.g., correlation matrix) or 3D (e.g., voxelwise cortical volume). Behavioral data is usually 1D (e.g., clinical scores).
+
 
 ### Set up
 *Requirements:*
 
-•	SPM for saving results onto volume
+•	SPM for saving results onto volume (https://www.fil.ion.ucl.ac.uk/spm/)
 
-• Slover to display slice maps
+• Slice overlay (slover) to display slice maps (http://imaging.mrc-cbu.cam.ac.uk/imaging/DisplaySlices)
 
-• Function ploterr (Copyright (c) 2008, Felix Zoergiebel) for bar plots
+• Function ploterr (Copyright (c) 2008, Felix Zoergiebel) for bar plots (https://www.mathworks.com/matlabcentral/fileexchange/22216-ploterr)
 
 
 ### PLS method
@@ -50,13 +56,9 @@ These scripts and functions are based on myPLS scripts previously
 published on https://miplab.epfl.ch/index.php/software/PLS
 
 
-### Code release
-Download stand-alone repository here: XXXX
-
-
 ### Updates
 •	Release v1.0 (25/09/2019): Initial release of myPLS toolbox
 
 
 ### Bugs and questions
-Please contact Daniela Zoller at XXXX or Valeria Kebets at valkebets@gmail.com
+You can ask questions, report bugs or discuss ideas for modifications on this Slack channel: **myplstoolbox.slack.com** <br /> or contact Daniela Zoller at XXXX or Valeria Kebets at valkebets@gmail.com
